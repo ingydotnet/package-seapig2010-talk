@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>011</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "010z" + ".html";
+        return false;
+    }
+    if (keynum == 13 || keynum == 32) {
+        window.location = "012" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+                        Introducing &quot;package&quot;
+     
+             (the Python package package package!)
+     
+     * Ingy wrote Module::Install for Perl
+     
+     * Now he has written &quot;package&quot; for Python
+     
+     * Makes it so easy to start a new package
+     * Includes all the fixes to distutils etc
+     * Puts all your setup.py info in a YAML file (or two)
+     * Gives you testing for free
+     * Provides a handy Makefile
+
+
+
+
+</pre>
+</body>
