@@ -1,0 +1,209 @@
+---- config
+title: Package package package, package!
+indent: 5
+height: 18
+width: 69
+skip: 0
+
+# The following options are for Gvim usage.
+vim: gvim
+gvimrc: |
+  set fuopt=maxhorz,maxvert
+  set guioptions=egmLtT
+  set guifont=Bitstream_Vera_Sans_Mono:h18
+  set guicursor=a:blinkon0-ver25-Cursor
+  colorscheme default
+
+---- center
+The Python Package package package, package
+
+by Ingy döt Net
+
+SeaPig, 13 May, 2010
+
+----
+== He's Back!!!
+
+* My name is Ingy döt Net
+* Last month I was here...
+  * Talked about C'Dent
+* Numpy got cancelled
+  * I'm glad to present on a moments notice.
+
+----
+== Ingy's Thoughts on Python
+
+* I am a new Python guy. Old Perl guy.
+* What do I think of your language???
+
++* IT SUCKS!!!
+
++* But it sucks less than Perl in many ways.
+
+----
+== The Good
+
+* The _language_ is concise, simple and clear
+  * Like YAML ;)
+* Top notch runtime introspection
+* It has modules
+* It has PyPi
+
+----
+== The Bad
+
+* Namespacing
+* Packaging methodology
+* Documentation standards
+* Testing standards
+  * PYTHON CAN HAS TMTOWTDI!!!
+
++* Bootstrapping Nightmares
+
+----
+== The Ugly
+
+* Let's just say...
+
++  ... Larry is better looking than Guido! :D
+----
+== What Ingy wants to do with Python
+
+* Goal??
+
+    "Release a new package to Python every week"
+
+* To do that, I need good standards and methodology
+* I don't want to deal with "Release Engineering" nightmares
+
+----
+== Problems using core tools
+
+* The problem with having standards like unittest and distutils:
+
+* You can't change them easily.
+* When you realize they suck, you can't fix them.
+
+----
+== Problems using new tools
+
+* The problem with having new stuff like nose and setuptools
+
+* It makes adoption harder.
+* Your audience needs to do too much work.
+
+----
+== A Simple Solution
+
+* There is a simple solution!
+
++* Ship all the new stuff you need *inside* every package!!
+
+* Disk is cheap
+* People's attention is priceless
+----
+== Introducing "package"
+
+        (the Python package package package!)
+
+* Ingy wrote Module::Install for Perl
+
+* Now he has written "package" for Python
+
+* Makes it so easy to start a new package
+* Includes all the fixes to distutils etc
+* Puts all your setup.py info in a YAML file (or two)
+* Gives you testing for free
+* Provides a handy Makefile
+
+----
+== The PyPi Package Workshop
+
+    Tonight we are going to practice being PyPi authors!!
+
++* Create a GitHub account
+* Create a PyPi account
+* Install git
+* Install Python
+* Install package
+* Come up with ideas for packages as a group
+* Create packages
+  * register
+  * upload
+* Make a To-Do List for package
+
+  Some people might need to pair up... (windows--, etc)
+
+----
+== Signup for GitHub
+
+* http://github.com/plans
+* Signup for a Free Plan account
+
+----
+== Sign up for PyPi
+
+* http://pypi.python.org/ 
+
+----
+== Sign up for PyPi
+
+* http://pypi.python.org/ 
+
+----
+== Install Python
+
+* Yeah, right! ;)
+
+----
+== Install package
+
+* http://pypi.python.org/pypi/package/
+
+----
+== Package Ideas
+
+* Packages can modules or scripts
+
+* Game of Life
+* TestML
+
+----
+== Create a new package
+
+    > cd src
+    > mkdir your-stuff
+    > cd your-stuff
+    > make -f ../package-py/Makefile setup
+    > edit package/info.yaml
+    > make package-info
+
+----
+== Talk about the package layout/contents
+
+* setup.py
+* package/info.py
+* tests/
+* Makefile
+
+----
+== Interacting with PyPi
+
+* write code
+* make register
+* make upload
+
+---- center
+== The End
+
+Any Questions?
+
+.
+
+.
+
+Slides are here:
+
+http://ingydotnet.github.com/package-seapig2010-talk/
+
+
