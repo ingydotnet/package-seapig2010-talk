@@ -1,7 +1,7 @@
 ---- config
 title: Package package package, package!
 indent: 5
-height: 18
+height: 27
 width: 69
 skip: 0
 
@@ -28,7 +28,7 @@ SeaPig, 13 May, 2010
 * Last month I was here...
   * Talked about C'Dent
 * Numpy got cancelled
-  * I'm glad to present on a moments notice.
+  * I'm glad to present on a moment's notice.
 
 ----
 == Ingy's Thoughts on Python
@@ -38,7 +38,7 @@ SeaPig, 13 May, 2010
 
 +* IT SUCKS!!!
 
-+* But it sucks less than Perl in many ways.
++* But it sucks less than Perl in many ways. :)
 
 ----
 == The Good
@@ -46,6 +46,7 @@ SeaPig, 13 May, 2010
 * The _language_ is concise, simple and clear
   * Like YAML ;)
 * Top notch runtime introspection
+
 * It has modules
 * It has PyPi
 
@@ -71,10 +72,21 @@ SeaPig, 13 May, 2010
 
 * Goal??
 
-    "Release a new package to Python every week"
+    "Release a new package to PyPi every week"
 
 * To do that, I need good standards and methodology
 * I don't want to deal with "Release Engineering" nightmares
+
+----
+== Python Toolchain Overview
+
+* distutils
+* setuptools
+  * easy_install
+
+* unittest
+* py.test
+* nose
 
 ----
 == Problems using core tools
@@ -101,6 +113,9 @@ SeaPig, 13 May, 2010
 
 * Disk is cheap
 * People's attention is priceless
+
+* Fix problems as they arise.
+* Eventually best practices will go into core.
 ----
 == Introducing "package"
 
@@ -165,6 +180,7 @@ SeaPig, 13 May, 2010
 
 * Packages can modules or scripts
 
+* 1,000,000,000th Birth Second
 * Game of Life
 * TestML
 
